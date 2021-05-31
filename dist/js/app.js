@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".order-btn").click(function(n){if($(this).hasClass("disabled"))return!1}),$("#confirm").change(function(){$(this).prop("checked")?$(this).parents(".row").find(".order-btn").removeClass("disabled"):$(this).parents(".row").find(".order-btn").addClass("disabled")})});

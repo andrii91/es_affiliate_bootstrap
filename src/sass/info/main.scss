@@ -1,0 +1,29 @@
+@import 'variables';
+
+
+body {
+  @import 'MediaQueries/main';
+  overflow-x: hidden;
+}
+
+
+.es-bg {
+  background: #003077;
+}
+
+.large {
+  font-size: $font-size-base * 1.125;
+}
+
+.checkbox-lg .custom-control-label::before, 
+.checkbox-lg .custom-control-label::after {
+//  top: .8rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.checkbox-lg .custom-control-label {
+  padding-top: 2px;
+  padding-left: 6px;
+  cursor: pointer;
+}
