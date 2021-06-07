@@ -52,89 +52,31 @@
       <div class="col-lg-1"></div>
       <div class="col-lg-10 pt-7">
         <div class="bg-white py-lg-6 px-lg-12 my-lg-4 my-4 px-1 py-3">
-          <h1 class="h1 mb-1">Elite Seller’s Affiliate Program</h1>
-          <p>Welcome to Elite Seller’s Affiliate Program! For each subscription we acquire through your affiliate promo code, you get paid a commission. </p>
-
-          <div class="bg-light h-4px mb-4"></div>
-
-          <h6>Here are the payout terms: </h6>
-          <ol class="pl-2 mb-lg-4">
-            <li>Earn up to 30% depending on the value of your promo code. </li>
-            <li>Convenient monthly or annual payouts </li>
-            <li>Continue to get paid for every renewal </li>
-          </ol>
-
-          <h6>Limitations</h6>
-          <ol class="pl-2 mb-lg-3">
-            <li>Signing up with your personal account </li>
-            <li>PPC Ad branded search terms </li>
-            <li>Promoting Elite Seller in a way that misleads the customers.</li>
-          </ol>
-          <p class="mb-4  text-muted">We reserve the full right to determine whether any commission falls into any of the above-stated categories.</p>
-
-
-          <div class="card mb-5 border-light">
-            <div class="card-header bg-light border-light py-1 px-1"><b>Commission Structure</b></div>
-            <div class="table-responsive-sm">
-              <table class="table border-light mb-0">
-                <thead>
-                  <tr>
-                    <th class="border-light px-2-4 pt-1 pb-2 font-weight-normal">Module</th>
-                    <th class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">Commission Type</th>
-                    <th class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">Coupons</th>
-                    <th class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">Requires Approval</th>
-                  </tr>
-                  <tr>
-                    <td class="border-light px-2-4 pt-1 pb-2 font-weight-normal">Subscriptions</td>
-                    <td class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">30%</td>
-                    <td class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">Yes </td>
-                    <td class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">No </td>
-                  </tr>
-                  <tr>
-                    <td class="border-light px-2-4 pt-1 pb-2 font-weight-normal">Manychat Rebates</td>
-                    <td class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">10%</td>
-                    <td class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">No </td>
-                    <td class="text-right border-light px-2-4 pt-1 pb-2 font-weight-normal">No </td>
-                  </tr>
-                </thead>
-              </table>
-            </div>
-          </div>
-
+         
           <div class="card border-light">
-            <div class="card-header bg-light border-light py-1 px-1"><b>Sign up</b></div>
+            <div class="card-header bg-light border-light py-1 px-1"><b>Sign In</b></div>
             <div class="card-body py-lg-2-4 px-lg-2-4">
-              <form method="post" id="signup_index_form" action="/affiliate/access/signup" class="fv-plugins-bootstrap fv-plugins-framework" novalidate="novalidate">
-                <div class="form-group fv-plugins-icon-container">
-                  <!--                  <label for="name">Name</label>-->
-                  <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp" placeholder="Enter name" value=""><i data-field="name" class="fv-plugins-icon fal fa-asterisk"></i>
-                  <div class="fv-plugins-message-container"></div>
-                </div>
-                <div class="form-group fv-plugins-icon-container">
-                  <!--                  <label for="email">Email address</label>-->
-                  <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value=""><i data-field="email" class="fv-plugins-icon fal fa-asterisk"></i>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  <div class="fv-plugins-message-container"></div>
-                </div>
-                <div class="form-group fv-plugins-icon-container">
-                  <!--                  <label for="password">Password</label>-->
-                  <input type="password" name="password" class="form-control form-control-lg" id="password" placeholder="Password"><i data-field="password" class="fv-plugins-icon fal fa-asterisk"></i>
-                  <div class="fv-plugins-message-container"></div>
-                </div>
-                <div class="form-group fv-plugins-icon-container">
-                  <!--                  <label for="password2">Confirm Password</label>-->
-                  <input type="password" name="password2" class="form-control form-control-lg" id="password2" placeholder="Confirm Password"><i data-field="password2" class="fv-plugins-icon fal fa-asterisk"></i>
-                  <div class="fv-plugins-message-container"></div>
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="acceptterms" name="acceptterms">
-                  <label class="form-check-label" for="acceptterms">I accept the Terms &amp; Conditions</label>
-                </div>
-                <div class="text-left mt-1">
-                  <button name="submit_form" type="submit" class="btn btn-danger btn-lg" value="1">Sign up</button>
-                </div>
-                <div></div><input type="hidden">
-              </form>
+              
+              <form method="post" id="main_form" class="fv-plugins-bootstrap fv-plugins-framework" novalidate="novalidate">
+                    <div class="form-group fv-plugins-icon-container">
+<!--                        <label for="email">Email address</label>-->
+                        <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email"><i data-field="email" class="fv-plugins-icon fal fa-asterisk"></i>
+                    <div class="fv-plugins-message-container"></div></div>
+                    <div class="form-group fv-plugins-icon-container">
+<!--                        <label for="password">Password</label>-->
+                        <input type="password" name="password" class="form-control form-control-lg" id="password" placeholder="Password"><i data-field="password" class="fv-plugins-icon fal fa-asterisk"></i>
+                    <div class="fv-plugins-message-container"></div></div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="lost_password.html">Lost Password</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button name="submit_form" type="submit" class="btn btn-danger btn-lg" value="1">Sign In</button>
+                        </div>
+                    </div>
+                <div></div><input type="hidden"></form>
+                
+                
             </div>
           </div>
 

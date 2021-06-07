@@ -18,7 +18,7 @@
 </head>
 
 <body class="bg-primary">
-  <nav class="navbar navbar-expand-lg py-1 navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg py-1 navbar-light bg-white fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand   ml-lg-5" href="/"><svg viewBox="0 0 272 43" width="178" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3.469 28.333a3.451 3.451 0 01-3.457-3.454 3.451 3.451 0 013.457-3.454h14.637c.89 0 1.663-.356 2.233-1.021l4.313-4.985c.582-.677 1.342-1.021 2.245-1.021H37.53a3.451 3.451 0 013.457 3.454 3.451 3.451 0 01-3.457 3.454H22.905c-.89 0-1.663.344-2.245 1.02l-4.313 4.998a2.842 2.842 0 01-2.233 1.02H3.469v-.011zM35.201 0h2.329a3.451 3.451 0 013.457 3.454 3.451 3.451 0 01-3.457 3.454h-6.32c-.892 0-1.664.356-2.246 1.021l-4.313 4.985c-.582.677-1.354 1.021-2.245 1.021H3.457A3.451 3.451 0 010 10.481a3.451 3.451 0 013.457-3.454H26.41c.892 0 1.664-.356 2.234-1.02l4.313-4.986A2.904 2.904 0 0135.2 0zM5.798 42.707H3.469a3.451 3.451 0 01-3.457-3.454 3.451 3.451 0 013.457-3.454h6.332c.891 0 1.663-.356 2.234-1.02l4.312-4.986c.582-.677 1.343-1.02 2.246-1.02h18.949a3.451 3.451 0 013.457 3.453 3.451 3.451 0 01-3.457 3.454H14.589c-.891 0-1.663.344-2.234 1.021l-4.312 4.985a2.904 2.904 0 01-2.245 1.021z" fill="#19153E" />
@@ -31,13 +31,26 @@
             </linearGradient>
           </defs>
         </svg></a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mt-3 mt-lg-0 ml-auto" id="nav1">
+        <ul class="navbar-nav ml-auto">
+          <li><a class="btn btn-danger  mr-lg-1" href="signup.html">Sign up</a></li>
+          <li><a class="btn " href="signin.html">Sign in</a></li>
+        </ul>
+        
+      </div>
     </div>
   </nav>
 
   <div class="container">
     <div class="row">
       <div class="col-lg-1"></div>
-      <div class="col-lg-10">
+      <div class="col-lg-10 pt-7">
         <div class="bg-white py-lg-6 px-lg-12 my-lg-4 my-4 px-1 py-3">
           <h1 class="h1 mb-1">Elite Seller’s Affiliate Program</h1>
           <p>Welcome to Elite Seller’s Affiliate Program! For each subscription we acquire through your affiliate promo code, you get paid a commission. </p>
@@ -60,10 +73,10 @@
           <p class="mb-4  text-muted">We reserve the full right to determine whether any commission falls into any of the above-stated categories.</p>
 
 
-          <div class="card mb-4 border-light">
+          <div class="card mb-5 border-light">
             <div class="card-header bg-light border-light py-1 px-1"><b>Commission Structure</b></div>
             <div class="table-responsive-sm">
-              <table class="table border-light">
+              <table class="table border-light mb-0">
                 <thead>
                   <tr>
                     <th class="border-light px-2-4 pt-1 pb-2 font-weight-normal">Module</th>
@@ -93,24 +106,24 @@
             <div class="card-body py-lg-2-4 px-lg-2-4">
               <form method="post" id="signup_index_form" action="/affiliate/access/signup" class="fv-plugins-bootstrap fv-plugins-framework" novalidate="novalidate">
                 <div class="form-group fv-plugins-icon-container">
-<!--                  <label for="name">Name</label>-->
-                  <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Enter name" value=""><i data-field="name" class="fv-plugins-icon fal fa-asterisk"></i>
+                  <!--                  <label for="name">Name</label>-->
+                  <input type="text" class="form-control form-control-lg" id="name" name="name" aria-describedby="nameHelp" placeholder="Enter name" value=""><i data-field="name" class="fv-plugins-icon fal fa-asterisk"></i>
                   <div class="fv-plugins-message-container"></div>
                 </div>
                 <div class="form-group fv-plugins-icon-container">
-<!--                  <label for="email">Email address</label>-->
-                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value=""><i data-field="email" class="fv-plugins-icon fal fa-asterisk"></i>
+                  <!--                  <label for="email">Email address</label>-->
+                  <input type="email" class="form-control form-control-lg" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" value=""><i data-field="email" class="fv-plugins-icon fal fa-asterisk"></i>
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   <div class="fv-plugins-message-container"></div>
                 </div>
                 <div class="form-group fv-plugins-icon-container">
-<!--                  <label for="password">Password</label>-->
-                  <input type="password" name="password" class="form-control" id="password" placeholder="Password"><i data-field="password" class="fv-plugins-icon fal fa-asterisk"></i>
+                  <!--                  <label for="password">Password</label>-->
+                  <input type="password" name="password" class="form-control form-control-lg" id="password" placeholder="Password"><i data-field="password" class="fv-plugins-icon fal fa-asterisk"></i>
                   <div class="fv-plugins-message-container"></div>
                 </div>
                 <div class="form-group fv-plugins-icon-container">
-<!--                  <label for="password2">Confirm Password</label>-->
-                  <input type="password" name="password2" class="form-control" id="password2" placeholder="Confirm Password"><i data-field="password2" class="fv-plugins-icon fal fa-asterisk"></i>
+                  <!--                  <label for="password2">Confirm Password</label>-->
+                  <input type="password" name="password2" class="form-control form-control-lg" id="password2" placeholder="Confirm Password"><i data-field="password2" class="fv-plugins-icon fal fa-asterisk"></i>
                   <div class="fv-plugins-message-container"></div>
                 </div>
                 <div class="form-check">
@@ -118,7 +131,7 @@
                   <label class="form-check-label" for="acceptterms">I accept the Terms &amp; Conditions</label>
                 </div>
                 <div class="text-left mt-1">
-                  <button name="submit_form" type="submit" class="btn btn-danger" value="1">Sign up</button>
+                  <button name="submit_form" type="submit" class="btn btn-danger btn-lg" value="1">Sign up</button>
                 </div>
                 <div></div><input type="hidden">
               </form>
